@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/black"
+    android:id="@+id/main">
+
+    <SeekBar
+        android:id="@+id/red_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:min="0"
+        android:max="255"
+        android:thumbTint="@color/red"
+        android:progressTint="@color/red"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@id/green_bar"
+        />
+
+    <SeekBar
+        android:id="@+id/green_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:min="0"
+        android:max="255"
+        android:thumbTint="@color/green"
+        android:progressTint="@color/green"
+        android:layout_centerInParent="true"
+        />
+
+    <SeekBar
+        android:id="@+id/blue_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="0"
+        android:min="0"
+        android:max="255"
+        android:thumbTint="@color/blue"
+        android:progressTint="@color/blue"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/green_bar"
+        />
+
+</RelativeLayout>
